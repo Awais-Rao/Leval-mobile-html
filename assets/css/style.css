@@ -206,6 +206,9 @@ input::placeholder {
   margin: 0 10px;
   text-transform: uppercase;
 }
+.navbar-toggler{
+  color: var(--color-primary);
+}
 .navbar-toggler .close__icon {
   display: none;
 }
