@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Levale</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- Fontawesome Icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swipper Slider Css  -->
+    <link rel="stylesheet" href="assets/css/swiper-slider.css" />
+    <!-- Theme Css  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg theme__navbar py-lg-4 py-sm-3 py-2">
+        <div class="container d-flex align-items-center">
+          <!-- Left: Logo -->
+          <a class="navbar-brand fw-bold me-auto" href="#">LEVALE</a>
+
+          <!-- Toggler -->
+          <div class="mobile__toggler d-flex align-items-center gap-2">
+            <div class="search-toggle ms-auto d-block d-lg-none">
+              <i class="fas fa-search"></i>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <!-- Center: Menu -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Levale</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            </ul>
+          </div>
+
+          <!-- Right: Search -->
+          <div class="search-toggle ms-auto d-none d-lg-block">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Fullscreen Search Overlay -->
+      <div class="search-overlay" id="searchOverlay">
+        <span class="search-close" id="searchClose">&times;</span>
+        <input type="text" placeholder="Type to search..." />
+      </div>
+    </header>
+
+    <main>
+      <div class="container page__content mt-5 pt-4">
+        <h2 class="shop__title">Find the phone that's right for you</h2>
+
+        <div class="shop__filters_wrapper">
+          <div class="container my-4">
+            <!-- BRANDS (horizontal, scrollable, chevron scrolls ~20%) -->
+            <div class="row mb-4 align-items-center">
+              <div class="col-md-2">
+                <span class="fw-semibold me-3 shop__filter_label"
+                  >All Products</span
+                >
+              </div>
+              <div class="col-md-10">
+                <div class="position-relative overflow-auto no-scrollbar">
+                  <div
+                    id="brandsTrack"
+                    class="filter-track d-flex gap-2 px-1 overflow-auto no-scrollbar"
+                  >
+                    <input
+                      class="btn-check"
+                      id="brand-apple"
+                      type="checkbox"
+                      checked
+                    />
+                    <label class="filter-pill" for="brand-apple">Apple</label>
+
+                    <input
+                      class="btn-check"
+                      id="brand-samsung"
+                      type="checkbox"
+                    />
+                    <label class="filter-pill" for="brand-samsung"
+                      >SAMSUNG</label
+                    >
+
+                    <input
+                      class="btn-check"
+                      id="brand-google"
+                      type="checkbox"
+                    />
+                    <label class="filter-pill" for="brand-google">G</label>
+
+                    <input
+                      class="btn-check"
+                      id="brand-oneplus"
+                      type="checkbox"
+                    />
+                    <label class="filter-pill" for="brand-oneplus"
+                      >OnePlus</label
+                    >
+
+                    <input
+                      class="btn-check"
+                      id="brand-xiaomi"
+                      type="checkbox"
+                    />
+                    <label class="filter-pill" for="brand-xiaomi">Xiaomi</label>
+
+                    <input class="btn-check" id="brand-nokia" type="checkbox" />
+                    <label class="filter-pill" for="brand-nokia">Nokia</label>
+
+                    <input class="btn-check" id="brand-oppo" type="checkbox" />
+                    <label class="filter-pill" for="brand-oppo">OPPO</label>
+
+                    <input class="btn-check" id="brand-vivo" type="checkbox" />
+                    <label class="filter-pill" for="brand-vivo">vivo</label>
+                    <input
+                      class="btn-check"
+                      id="brand-samsung"
+                      type="checkbox"
+                    />
+                    <label class="filter-pill" for="brand-samsung"
+                      >SAMSUNG</label
+                    >
+
+                    <input
+                      class="btn-check"
+                      id="brand-google"
+                      type="checkbox"
+                    />
+                    <label class="filter-pill" for="brand-google">G</label>
+
+                    <input
+                      class="btn-check"
+                      id="brand-oneplus"
+                      type="checkbox"
+                    />
+                    <label class="filter-pill" for="brand-oneplus"
+                      >OnePlus</label
+                    >
+
+                    <input
+                      class="btn-check"
+                      id="brand-xiaomi"
+                      type="checkbox"
+                    />
+                    <label class="filter-pill" for="brand-xiaomi">Xiaomi</label>
+
+                    <input class="btn-check" id="brand-nokia" type="checkbox" />
+                    <label class="filter-pill" for="brand-nokia">Nokia</label>
+
+                    <input class="btn-check" id="brand-oppo" type="checkbox" />
+                    <label class="filter-pill" for="brand-oppo">OPPO</label>
+
+                    <input class="btn-check" id="brand-vivo" type="checkbox" />
+                    <label class="filter-pill" for="brand-vivo">vivo</label>
+                  </div>
+
+                  <!-- Scroll buttons -->
+                  <button
+                    class="scroll-btn scroll-right"
+                    data-target="#brandsTrack"
+                    data-dir="1"
+                    aria-label="Scroll right"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M9 6l6 6-6 6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- CONDITION (checkbox pills) -->
+            <div class="row mb-4 align-items-center">
+              <div class="col-md-2">
+                <span class="fw-semibold me-3 shop__filter_label"
+                  >Condition</span
+                >
+              </div>
+
+              <div class="col-md-10">
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <input class="btn-check" id="cond-premium" type="checkbox" />
+                  <label class="filter-pill" for="cond-premium">Premium</label>
+
+                  <input
+                    class="btn-check"
+                    id="cond-good"
+                    type="checkbox"
+                    checked
+                  />
+                  <label class="filter-pill" for="cond-good">Good</label>
+
+                  <input class="btn-check" id="cond-okay" type="checkbox" />
+                  <label class="filter-pill" for="cond-okay">Okay</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- PRICE RANGE (dual handle) -->
+            <div class="row mb-4 align-items-center">
+              <div class="col-md-2">
+                <span class="fw-semibold me-3 shop__filter_label"
+                  >Price Range</span
+                >
+              </div>
+              <div class="col-md-10">
+                <div
+                  class="card flex-grow-1 p-3 shadow-sm border-0 rounded-4 py-2"
+                >
+                  <div class="range-wrap">
+                    <div
+                      class="d-flex justify-content-between small text-muted mb-1"
+                    >
+                      <span>Minimum</span>
+                      <span>Maximum</span>
+                    </div>
+
+                    <div class="position-relative mb-1">
+                      <!-- track is drawn by CSS gradient on the lower input -->
+                      <input
+                        id="priceMin"
+                        type="range"
+                        min="0"
+                        max="5000"
+                        step="50"
+                        value="1800"
+                        class="range range-min"
+                      />
+                      <input
+                        id="priceMax"
+                        type="range"
+                        min="0"
+                        max="5000"
+                        step="50"
+                        value="1800"
+                        class="range range-max"
+                      />
+                    </div>
+
+                    <div class="d-flex justify-content-between fw-semibold">
+                      <span id="minOut">1800</span>
+                      <span id="maxOut">1800</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row px-md-0 px-3 shop__products_wrapper">
+          <div class="col-lg-4 col-md-6">
+            <div class="shop__card mb-4">
+              <!-- Image slider -->
+              <div class="image__wrapper swiper product-card-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-1.png" alt="White"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-2.png" alt="Gold"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-3.png" alt="Blue"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-4.png" alt="Black"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Color options -->
+              <div class="product__color_options">
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="0"
+                  style="background: #fdfdfd"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="1"
+                  style="background: #f5deb3"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="2"
+                  style="background: #4a6fa5"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="3"
+                  style="background: #000"
+                ></a>
+              </div>
+
+              <!-- Product info -->
+              <a href="#" class="product__name">iPhone 17 Air</a>
+              <p class="product__price">8000 kr</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="shop__card mb-4">
+              <!-- Image slider -->
+              <div class="image__wrapper swiper product-card-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-1.png" alt="White"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-2.png" alt="Gold"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-3.png" alt="Blue"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-4.png" alt="Black"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Color options -->
+              <div class="product__color_options">
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="0"
+                  style="background: #fdfdfd"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="1"
+                  style="background: #f5deb3"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="2"
+                  style="background: #4a6fa5"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="3"
+                  style="background: #000"
+                ></a>
+              </div>
+
+              <!-- Product info -->
+              <a href="#" class="product__name">iPhone 17 Air</a>
+              <p class="product__price">8000 kr</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="shop__card mb-4">
+              <!-- Image slider -->
+              <div class="image__wrapper swiper product-card-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-1.png" alt="White"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-2.png" alt="Gold"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-3.png" alt="Blue"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-4.png" alt="Black"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Color options -->
+              <div class="product__color_options">
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="0"
+                  style="background: #fdfdfd"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="1"
+                  style="background: #f5deb3"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="2"
+                  style="background: #4a6fa5"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="3"
+                  style="background: #000"
+                ></a>
+              </div>
+
+              <!-- Product info -->
+              <a href="#" class="product__name">iPhone 17 Air</a>
+              <p class="product__price">8000 kr</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="shop__card mb-4">
+              <!-- Image slider -->
+              <div class="image__wrapper swiper product-card-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-1.png" alt="White"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-2.png" alt="Gold"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-3.png" alt="Blue"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-4.png" alt="Black"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Color options -->
+              <div class="product__color_options">
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="0"
+                  style="background: #fdfdfd"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="1"
+                  style="background: #f5deb3"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="2"
+                  style="background: #4a6fa5"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="3"
+                  style="background: #000"
+                ></a>
+              </div>
+
+              <!-- Product info -->
+              <a href="#" class="product__name">iPhone 17 Air</a>
+              <p class="product__price">8000 kr</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="shop__card mb-4">
+              <!-- Image slider -->
+              <div class="image__wrapper swiper product-card-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-1.png" alt="White"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-2.png" alt="Gold"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-3.png" alt="Blue"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-4.png" alt="Black"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Color options -->
+              <div class="product__color_options">
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="0"
+                  style="background: #fdfdfd"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="1"
+                  style="background: #f5deb3"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="2"
+                  style="background: #4a6fa5"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="3"
+                  style="background: #000"
+                ></a>
+              </div>
+
+              <!-- Product info -->
+              <a href="#" class="product__name">iPhone 17 Air</a>
+              <p class="product__price">8000 kr</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="shop__card mb-4">
+              <!-- Image slider -->
+              <div class="image__wrapper swiper product-card-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-1.png" alt="White"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-2.png" alt="Gold"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-3.png" alt="Blue"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-4.png" alt="Black"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Color options -->
+              <div class="product__color_options">
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="0"
+                  style="background: #fdfdfd"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="1"
+                  style="background: #f5deb3"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="2"
+                  style="background: #4a6fa5"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="3"
+                  style="background: #000"
+                ></a>
+              </div>
+
+              <!-- Product info -->
+              <a href="#" class="product__name">iPhone 17 Air</a>
+              <p class="product__price">8000 kr</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="shop__card mb-4">
+              <!-- Image slider -->
+              <div class="image__wrapper swiper product-card-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-1.png" alt="White"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-2.png" alt="Gold"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-3.png" alt="Blue"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-4.png" alt="Black"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Color options -->
+              <div class="product__color_options">
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="0"
+                  style="background: #fdfdfd"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="1"
+                  style="background: #f5deb3"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="2"
+                  style="background: #4a6fa5"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="3"
+                  style="background: #000"
+                ></a>
+              </div>
+
+              <!-- Product info -->
+              <a href="#" class="product__name">iPhone 17 Air</a>
+              <p class="product__price">8000 kr</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="shop__card mb-4">
+              <!-- Image slider -->
+              <div class="image__wrapper swiper product-card-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-1.png" alt="White"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-2.png" alt="Gold"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-3.png" alt="Blue"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-4.png" alt="Black"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Color options -->
+              <div class="product__color_options">
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="0"
+                  style="background: #fdfdfd"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="1"
+                  style="background: #f5deb3"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="2"
+                  style="background: #4a6fa5"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="3"
+                  style="background: #000"
+                ></a>
+              </div>
+
+              <!-- Product info -->
+              <a href="#" class="product__name">iPhone 17 Air</a>
+              <p class="product__price">8000 kr</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="shop__card mb-4">
+              <!-- Image slider -->
+              <div class="image__wrapper swiper product-card-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-1.png" alt="White"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-2.png" alt="Gold"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-3.png" alt="Blue"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"
+                      ><img src="assets/imgs/Product-4.png" alt="Black"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Color options -->
+              <div class="product__color_options">
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="0"
+                  style="background: #fdfdfd"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="1"
+                  style="background: #f5deb3"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="2"
+                  style="background: #4a6fa5"
+                ></a>
+                <a
+                  href="#"
+                  class="color-dot"
+                  data-slide="3"
+                  style="background: #000"
+                ></a>
+              </div>
+
+              <!-- Product info -->
+              <a href="#" class="product__name">iPhone 17 Air</a>
+              <p class="product__price">8000 kr</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+     <!-- Footer -->
+    <footer>
+      <div class="container footer__container">
+        <div class="row">
+          <!-- Popular Links -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 footer__column">
+            <h6 class="desc__label">Popular Links</h6>
+            <a href="#">IPhone 17 Pro Max</a>
+            <a href="#">IPhone 17 Air</a>
+            <a href="#">IPhone 16</a>
+            <a href="#">IPhone 12 Pro Max</a>
+            <a href="#">Note 20 Ultra</a>
+            <a href="#">Y19s Pro</a>
+            <a href="#">All Models</a>
+          </div>
+
+          <!-- Support -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 footer__column">
+            <h6 class="desc__label">Support</h6>
+            <a href="#">FAQs</a>
+            <a href="#">Service Center</a>
+            <a href="#">Query of Spare Parts Price</a>
+            <a href="#">Warranty Instructions</a>
+            <a href="#">Privacy Statement for Customer Service</a>
+          </div>
+
+          <!-- Explore -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 footer__column">
+            <h6 class="desc__label">Explore vivo</h6>
+            <a href="#">Info</a>
+            <a href="#">Press</a>
+            <a href="#">Careers at Levale</a>
+            <a href="#">Legal Notice</a>
+            <a href="#">About Us</a>
+            <a href="#">Sustainability</a>
+            <a href="#">Compliance</a>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-12 col-sm-6 mb-4 footer__column">
+            <h6 class="desc__label">Contact</h6>
+            <p class="footer__p"><i class="fab fa-whatsapp"></i> +46 76 949 63 58</p>
+            <p class="footer__p"><i class="fas fa-phone"></i> +46 76 949 63 58</p>
+            <p class="footer__p"><i class="fas fa-envelope"></i> ali.usama@levale.se</p>
+
+            <h6 class="desc__label mt-5">Follow us</h6>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="assets/js/bootstrap-pooper.js"></script>
+  <script src="assets/js/bootstrap-main.js"></script>
+  <!-- Swiper Slider JS -->
+  <script src="assets/js/swiper-slider.js"></script>
+  <!-- Scroll Reveal JS -->
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <!-- Theme JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

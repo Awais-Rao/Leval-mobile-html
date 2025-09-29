@@ -1,0 +1,217 @@
+/* ========================================
+   Laptop Screens
+   ======================================== */
+@media (max-width: 991px) {
+  /* **************** Root Variables **************** */
+  :root {
+    /* Font Sizes */
+    --fs-regular: 17px;
+    --fs-normal: 22px;
+    --fs-heading: 28px;
+    --fs-btn: 20px;
+    --fs-title: 50px;
+  }
+
+  /* **************** Reusable Elements **************** */
+  .section {
+    padding: 60px 0px;
+  }
+
+  .section__head {
+    margin-bottom: 50px;
+  }
+
+  .section__desc {
+    max-width: 100%;
+  }
+
+  /* **************** Header **************** */
+  .theme__header .header__logo {
+    display: none;
+  }
+  .theme__header .header__logo_mobile {
+    display: block;
+  }
+
+  .navbar-collapse {
+    background: var(--color-primary);
+    padding: 20px;
+    transition: all 0.3s ease-in-out !important;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  .navbar-collapse.show .navbar-nav .nav-link {
+    color: #bfbfbf;
+  }
+  .navbar-collapse.show .navbar-nav .active .nav-link {
+    color: #fff;
+  }
+
+  /* ************* Home **************** */
+  .hero__btn {
+    margin-top: 90px;
+  }
+  .hot__products_title {
+    max-width: 60%;
+    margin: auto;
+    font-size: 70px;
+    letter-spacing: -5px;
+    margin-bottom: 60px;
+  }
+  .home__product_data {
+    position: relative;
+    top: 80px;
+    left: 80px;
+    max-width: 70%;
+  }
+  .explore__products_img {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  /* **************** Shop Page **************** */
+
+  .shop__title {
+    font-size: 32px;
+  }
+  .shop__filters_wrapper{
+    margin-top: 18px;
+    margin-bottom: 40px;
+  }
+  .shop__filter_label {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .shop__card .image__wrapper {
+    height: 200px;
+  }
+
+  /* **************** Compare Page **************** */
+
+  .compare__section {
+    padding: 40px 10px;
+    padding-top: 0;
+  }
+}
+
+/* ========================================
+   Tablet Screens
+   ======================================== */
+@media (max-width: 768px) {
+  /* **************** Root Variables **************** */
+  :root {
+    /* Font Sizes */
+    --fs-regular: 16px;
+    --fs-normal: 20px;
+    --fs-heading: 24px;
+    --fs-btn: 20px;
+    --fs-title: 50px;
+  }
+
+  /* **************** Reusable Elements **************** */
+  .theme__navbar {
+    padding: 15px 0 !important;
+  }
+  .section {
+    padding: 40px 20px;
+  }
+
+  .section__head {
+    margin-bottom: 60px;
+  }
+
+  .section__desc {
+    max-width: 100%;
+  }
+  footer {
+    padding-bottom: 10px;
+  }
+  .footer__container {
+    padding: 0 20px;
+  }
+  .search-overlay input {
+    width: 85%;
+  }
+
+  /* ************* Home **************** */
+
+  .hero__data_wrapper {
+    padding: 0 20px;
+  }
+  .hot__products {
+    padding: 30px 0;
+  }
+  .hot__products_title {
+    max-width: 90%;
+    font-size: 50px;
+    letter-spacing: -3px;
+  }
+  .home__product {
+    margin-bottom: 40px;
+  }
+  .home__product_data {
+    position: relative;
+    top: 80px;
+    left: 40px;
+    max-width: 90%;
+    margin-bottom: 120px;
+  }
+  .home__product_data .subheading {
+    font-size: 24px;
+  }
+  .home__product_data .heading {
+    font-size: 40px;
+  }
+
+  .explore__products_img {
+    max-width: 85%;
+  }
+
+  /* **************** Shop Page **************** */
+
+  .shop__title {
+    font-size: 28px;
+  }
+  .shop__card .image__wrapper {
+    height: 300px;
+  }
+
+  /* **************** Product Detail Page **************** */
+  .product__gallery {
+    height: 350px;
+  }
+  .product__top_data,
+  .product__description {
+    padding: 0 10px;
+  }
+  .product__title {
+    margin-bottom: 30px;
+  }
+
+  /* **************** Compare Page **************** */
+
+  .compare__section {
+    padding: 40px 10px;
+    padding-top: 0;
+  }
+  .compare__row {
+    overflow: scroll;
+    flex-wrap: nowrap;
+  }
+}
+
+/* ========================================
+   Mobile Screens
+   ======================================== */
+@media (max-width: 576px) {
+  .product__gallery {
+    height: 450px;
+  }
+  .explore__products {
+    padding-top: 20px;
+  }
+  .explore__products_img {
+    max-width: 100%;
+  }
+}
