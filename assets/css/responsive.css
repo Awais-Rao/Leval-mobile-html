@@ -113,6 +113,15 @@
   .theme__navbar {
     padding: 15px 0 !important;
   }
+  .theme__navbar .container.d-flex{
+    padding: 0;
+  }
+  .theme__navbar .navbar-brand {
+    padding-left: 20px;
+  }
+  .theme__navbar .mobile__toggler {
+    padding-right: 10px;
+  }
   .section {
     padding: 40px 20px;
   }
