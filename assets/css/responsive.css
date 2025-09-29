@@ -37,8 +37,8 @@
     background: var(--color-primary);
     padding: 20px;
     transition: all 0.3s ease-in-out !important;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    /* border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; */
   }
   .navbar-collapse.show .navbar-nav .nav-link {
     color: #bfbfbf;
@@ -112,7 +112,7 @@
   /* **************** Reusable Elements **************** */
   .theme__navbar {
     padding: 15px 0 !important;
-    padding-left: 0 !important;
+    padding-bottom: 0 !important;
   }
   .theme__navbar .container.d-flex{
     padding: 0;
@@ -122,8 +122,8 @@
     padding-bottom: 15px;
   }
   .theme__navbar .mobile__toggler {
-    padding-bottom: 15px;
     padding-right: 10px;
+    padding-bottom: 15px;
   }
   .section {
     padding: 40px 20px;
