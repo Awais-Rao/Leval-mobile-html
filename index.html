@@ -61,9 +61,29 @@
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
+              <li class="nav-item dropdown brand-dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="productsDropdown"
+                  role="button"
+                >
+                  Products
+                </a>
+                <div
+                  class="dropdown-menu brand-menu"
+                  aria-labelledby="productsDropdown"
+                >
+                  <div class="brand-grid">
+                    <a href="#" class="nav-link brand-card">Apple</a>
+                    <a href="#" class="nav-link brand-card">Samsung</a>
+                    <a href="#" class="nav-link brand-card">Google</a>
+                    <a href="#" class="nav-link brand-card">OnePlus</a>
+                    <a href="#" class="nav-link brand-card">Xiaomi</a>
+                  </div>
+                </div>
               </li>
+
               <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Levale</a></li>
@@ -105,8 +125,8 @@
       </div>
     </section>
     <main>
-      <div class="container page__content mt-5 pt-4">
-        <section class="section hot__products">
+      <div class="page__content mt-5 pt-4">
+        <section class="section hot__products container">
           <h2 class="hot__products_title">Hot Products</h2>
 
           <a href="#" class="home__product_wrapper">
@@ -138,7 +158,216 @@
           </a>
         </section>
 
-        <section class="section explore__products">
+        <div class="container-fluid my-5 px-0 mx-0">
+          <!-- Slider 1 -->
+          <div class="swiper product-swiper swiper-ltr mb-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-1.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-2.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-3.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-1.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-2.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-3.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-1.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-2.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-3.png" alt="" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider 2 (reverse direction + centered) -->
+          <div class="swiper product-swiper swiper-rtl mb-2" dir="rtl">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-2.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-3.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-1.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-2.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-3.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-1.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-2.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-3.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-1.png" alt="" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider 3 -->
+          <div class="swiper product-swiper swiper-ltr">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-1.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-2.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-3.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-1.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-2.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-3.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-1.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-2.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="shop.html" class="">
+                  <div class="home__slider_card">
+                    <img src="assets/imgs/home-slider-img-3.png" alt="" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="section explore__products container">
           <a href="#">
             <img
               src="assets/imgs/Explore-All-Products.png"
