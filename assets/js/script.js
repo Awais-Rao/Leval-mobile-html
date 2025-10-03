@@ -1,3 +1,23 @@
+// ======= navbar brand menu ======
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth >= 992) {
+    document.querySelectorAll(".brand-dropdown").forEach(function (el) {
+      el.addEventListener("mouseenter", function () {
+        el.classList.add("show");
+        el.querySelector(".brand-menu").classList.add("show");
+      });
+      el.addEventListener("mouseleave", function () {
+        el.classList.remove("show");
+        el.querySelector(".brand-menu").classList.remove("show");
+      });
+    });
+  }
+});
+
+
+
+
 // ======= navbar searchbar ======
 document.addEventListener("DOMContentLoaded", () => {
   const searchToggle = document.querySelectorAll(".search-toggle");
@@ -146,6 +166,73 @@ if (minEl && maxEl && minOut && maxOut) {
   maxEl.addEventListener("input", update);
   update();
 }
+
+
+
+
+
+
+// ============== Home product swiper ===============
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Left-to-right sliders
+  document.querySelectorAll(".swiper-ltr").forEach((el) => {
+    new Swiper(el, {
+      slidesPerView: 4.5,
+      spaceBetween: 5,
+      freeMode: true,
+      mousewheel: true,
+      // loop: true,
+    });
+  });
+
+  // Right-to-left slider
+  document.querySelectorAll(".swiper-rtl").forEach((el) => {
+    new Swiper(el, {
+      slidesPerView: 4.5,
+      spaceBetween: 5,
+      freeMode: true,
+      mousewheel: true,
+      // loop: true,
+      dir: "rtl",
+      centeredSlides: true,
+    });
+  });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Shared responsive settings
+  const swiperOptions = {
+    spaceBetween: 5,
+    freeMode: true,
+    mousewheel: true,
+    breakpoints: {
+      320: { slidesPerView: 1.4 },
+      576: { slidesPerView: 2.3 },
+      768: { slidesPerView: 2.9 },
+      992: { slidesPerView: 3.6 },
+    }
+  };
+
+  // Left-to-right sliders
+  document.querySelectorAll(".swiper-ltr").forEach((el) => {
+    new Swiper(el, swiperOptions);
+  });
+
+  // Right-to-left slider
+  document.querySelectorAll(".swiper-rtl").forEach((el) => {
+    new Swiper(el, {
+      ...swiperOptions,
+      centeredSlides: true,
+    });
+  });
+});
+
+
 
 
 
