@@ -195,9 +195,9 @@ document.addEventListener("DOMContentLoaded", () => {
       spaceBetween: 5,
       freeMode: true,
       mousewheel: true,
-      // loop: true,
+      loop: true,
       dir: "rtl",
-      centeredSlides: true,
+      // centeredSlides: true,
     });
   });
 });
@@ -276,3 +276,4 @@ if (window.innerWidth <= 992) {
     sr.reveal(`.home__product`, { origin: "top", interval: 200 });
 
 }
+
